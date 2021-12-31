@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  poc-bodhi:
+    ports:
+      - 3000:3000
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./node_modules:/usr/src/app/node_modules
+      - ./:/usr/src/app/
