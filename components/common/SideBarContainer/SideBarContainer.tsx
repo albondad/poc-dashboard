@@ -15,7 +15,7 @@ export const SideBarContainer = (props: any) => {
     >
       <Box
         sx={{
-          width: props.width,
+          width: '15rem',
           backgroundColor: 'info.main',
           height: '100%',
           border: 0,

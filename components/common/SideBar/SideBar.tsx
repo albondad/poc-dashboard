@@ -12,7 +12,7 @@ import {
 
 export const SideBar = (props: any) => {
   return (
-    <SideBarContainer width={props.width}>
+    <SideBarContainer>
       {/* list */}
       <SideBarList>
         {props.items.map((item: any) => {
