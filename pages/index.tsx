@@ -1,33 +1,8 @@
-import React, { Fragment, useState } from 'react';
+import React from 'react';
 import type { NextPage } from 'next';
-import {
-  Box,
-  Button,
-  colors,
-  createTheme,
-  Drawer,
-  Grid,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Menu,
-  MenuItem,
-  Stack,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  ThemeProvider,
-  Toolbar,
-  Typography,
-} from '@mui/material';
+import { colors, createTheme, ThemeProvider } from '@mui/material';
 import {
   Speed as SpeedIcon,
-  Add as AddIcon,
-  MoreVert as MoverVertIcon,
   PeopleOutline as PeopleOutlineIcon,
   LockOpen as LockOpenIcon,
   SettingsOutlined as SettingsOutlinedIcon,
@@ -36,7 +11,15 @@ import {
 } from '@mui/icons-material';
 
 // other modules
-import { SideBar, TopBar } from '../components/common';
+import {
+  DashboardPageContainer,
+  DashboardPageHeader,
+  DashboardPageHeading,
+  DashboardPageActions,
+  DashboardPageButton,
+  SideBar,
+  TopBar,
+} from '../components/common';
 
 const theme = createTheme({
   palette: {
@@ -128,24 +111,25 @@ const Home: NextPage = () => {
         }}
       />
 
-      {/* box */}
-      <Box
-        sx={{
-          backgroundColor: colors.grey[200],
-          height: '100vh',
-          pl: dashboardPaddingLeft,
-          pt: dashboardPaddingTop,
-          pr: 4,
-        }}
-      ></Box>
+      <DashboardPageContainer>
+        <DashboardPageHeader>
+          <DashboardPageHeading>Dashboard</DashboardPageHeading>
+          <DashboardPageActions>
+            <DashboardPageButton>Edit</DashboardPageButton>
+            <DashboardPageButton>Add Asset</DashboardPageButton>
+          </DashboardPageActions>
+        </DashboardPageHeader>
+      </DashboardPageContainer>
     </ThemeProvider>
   );
 };
 
 export default Home;
 
-// dashboard container
-// dashboard header
-// dashboard page
-// dashboard page header
-// side bar
+// DashboardPage
+// DashboardPageContainer
+// DashboardPageHeader
+// DashboardPageHeaderHeading
+// DashboardPageHeaderActions
+// DashboardPageHeaderButton
+// DashboardPageHeaderBreadcrumbs

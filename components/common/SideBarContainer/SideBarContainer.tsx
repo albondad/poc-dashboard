@@ -8,7 +8,7 @@ export const SideBarContainer = (props: any) => {
       sx={{
         '& .MuiDrawer-paper': {
           border: 1,
-          borderColor: 'grey.300',
+          borderColor: 'grey.400',
           zIndex: 1000,
         },
       }}

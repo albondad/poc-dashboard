@@ -10,7 +10,7 @@ export const TopBarContainer = (props: any) => {
         backgroundColor: 'info.main',
         boxShadow: 0,
         borderBottom: 1,
-        borderColor: 'grey.300',
+        borderColor: 'grey.400',
       }}
     >
       <Toolbar
