@@ -1,3 +1,4 @@
+// imports from npm modules
 import { configureStore } from '@reduxjs/toolkit';
 
 // import other module
